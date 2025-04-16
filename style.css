@@ -1,0 +1,189 @@
+main {
+    margin-right: 7%;
+    margin-left: 5.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+p {
+    margin: 0%;
+}
+
+.siteD {
+    max-width: 85%;
+}
+
+a {
+    color: blue;
+}
+
+.logo {
+    max-width: 80%;
+    padding-bottom: 1%;
+}
+
+.logo2 {
+    display: none;
+}
+
+.espace {
+    margin-top: 2.5vh;
+}
+
+.espace2 {
+    margin-top: 5vh;
+}
+
+.espace3 {
+    margin-top: 1vh;
+}
+
+.espace4 {
+    margin-top: 3.5vh;
+}
+
+.fond {
+    background-color: #CCCCCC;
+}
+
+.date {
+    background-color: #FFCC00;
+    border: 2px black ridge;
+    border-bottom: 1px black ridge;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.case {
+    background-color: white;
+    border: 2px black ridge;
+    border-top: 1px black ridge;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+}
+
+.case2 {
+    background-color: white;
+    border: 2px black ridge;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+}
+
+.case3 {
+    background-color: white;
+    border: 2px black ridge;
+    border-top: 1px black ridge;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+}
+
+.gauche {
+    width: 25%;
+    margin-top: 10vh; /* Réduit la marge pour éviter un trop grand décalage */
+}
+
+.droite {
+    width: 75%;
+    height: 100vh; /* Assure que .droite prend toute la hauteur */
+    display: flex;
+    flex-direction: column;
+}
+
+td {
+    padding: 0%;
+}
+
+.content {
+    flex: 1; /* Permet à .content d'occuper l'espace restant */
+    min-height: 0; /* Empêche le débordement avec flexbox */
+    overflow-y: auto; /* Ajoute un scroll interne uniquement si nécessaire */
+    background-color: #CCCCCC;
+    margin-top: 0; /* Supprime un éventuel décalage supplémentaire */
+}
+
+.table {
+    margin-right: 20%;
+    margin-left: 20%;
+    font-size: small;
+}
+
+
+.menu {
+    width: 84%;
+    margin-left: 4%;
+    margin-right: 10%;
+}
+
+.home-icon {
+    display: none !important;
+}
+
+.fa-home {
+    color: blue;
+    font-size: 30px;
+}
+
+@media (max-width: 450px) {
+    main {
+        margin: 0 auto;
+    }
+
+    .gauche {
+        display: none;
+    }
+
+    .droite {
+        width: 90%;
+        margin-left: 5% ;
+        margin-right: 5%;
+    }
+
+    .home-icon {
+        display: inline-flex !important;
+        align-items: center;  /* Centre verticalement */
+        justify-content: center;  /* Centre horizontalement */
+        padding: 0 !important;
+        margin: 0 !important;
+        width: auto !important;  /* Ajuste la largeur à l'icône */
+        height: auto !important; /* Ajuste la hauteur à l'icône */
+        line-height: 1 !important;
+        text-decoration: none;
+        background: none !important;
+        border: none !important;
+        align-self: center !important;
+        flex: 0 0 auto !important;  /* Empêche l'étirement */
+    }
+
+    /* Cible l'icône spécifiquement */
+    .home-icon i {
+        font-size: 30px; /* Ajuste la taille de l'icône */
+        line-height: 1;
+        display: block; /* Évite toute déformation */
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        display: none; /* pour que le 1er logo n'apparaisse pas sur gsm*/
+    }
+
+    .logo2 {
+        display: block; /* pour que le 2eme logo apparaisse sur gsm*/
+        max-width: 80%;
+    }
+
+    .espace {
+        padding-left: 45%;
+    }
+
+}

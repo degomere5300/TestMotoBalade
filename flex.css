@@ -1,0 +1,14 @@
+.flexible {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes si nécessaire */
+    width: 100%; /* Assure-toi que la largeur de l'élément flexible est à 100% */
+}
+
+.block {
+    display: block;
+}
+
+.millieu {
+    display: flex; /* Assure-toi que c'est un conteneur flex */
+    justify-content: center; /* Centrer les éléments dans le conteneur */
+}
